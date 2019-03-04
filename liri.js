@@ -5,8 +5,9 @@ var axios = require("axios");
 var moment = require("moment");
 moment().format();
 var Spotify = require('node-spotify-api');
-
 var spotify = new Spotify(keys.spotify);
+var f = require("fs");
+
 
 // node liri.js userCommand queryParameter
 
@@ -131,11 +132,45 @@ function processMovie(movie){
 
 }
 
-function processDoWhatItSays(){
+function processDoWhatItSays(doAsTold){
 	console.log("Do what it says loaded");
 	// read random.txt
 	// get command and parameter from file
 	// pass them to processUSerCommand
+	
+    f.readFile('./random.txt', 'UTF8', function(err, data) {
+
+        if (err) {
+                console.log("I don't know what that means!")
+        }
+
+        var command = data.substring(0, data.indexOf(","));
+        // doAsTold = data.substring(data.indexOf(",") + 2, data.length - 1);
+        doAsTold = data.substring(data.indexOf(",") + 1);
+
+        console.log(command , doAsTold);
+
+        spotify.search({ type: 'track', query: doAsTold, limit: 1 }, function(err, data) {
+
+		  if (err) {
+		    return console.log('Error occurred: ' + err);
+		  }
+	 
+		  // console.log(JSON.stringify(data, null, 2));
+		  var track = data.tracks.items;
+
+		  for (var i = 0; i < track.length; i++) {
+
+			console.log("\n" + "Artists : " + JSON.stringify(track[i].album.artists[0].name) + "\n");
+			console.log("Song name : " + JSON.stringify(track[i].name) + "\n");
+			console.log("Album name : " + JSON.stringify(track[i].album.name) + "\n");
+			console.log("Preview link of the song : " + JSON.stringify(track[i].preview_url) + "\n");
+		  }
+
+		});
+
+    });
+    
 }
 
 processUserCommand(process.argv[2], process.argv.slice(3).join("+").trim());
