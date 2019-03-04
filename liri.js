@@ -1,7 +1,6 @@
 require("dotenv").config();
 var keys = require('./keys');
 var request = require('request');
-var axios = require('axios');
 var Spotify = require('node-spotify-api');
 
 var spotify = new Spotify(keys.spotify);
@@ -39,24 +38,17 @@ function processConcertThis(artist){
 	var bandsUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 	console.log(bandsUrl);
 
-	// axios.getArtist(artist)
- //  .then(function(events) {
- //    // return array of events
+	request(bandsUrl, function (error, response, a) {
 
- //    console.log(events);
- //  });
+	  console.log(JSON.parse(a));
 
- //  request(bandsUrl, function (error, response, a) {
-
-	//   console.log(JSON.stringify(a));
-
-	// });
+	});
 
 }
 
 function processSpotifySong(song){
 
-	// console.log("spotify song loaded");
+	console.log("spotify song loaded");
 
 	spotify.search({ type: 'track', query: song, limit: 1 }, function(err, data) {
 	  if (err) {
@@ -75,16 +67,16 @@ function processSpotifySong(song){
 }
 
 function processMovie(movie){
-	// console.log("movie loaded");
+	console.log("movie loaded");
 
 	var url = 'https://www.omdbapi.com/?t='+movie+'&y=&plot=short&apikey=trilogy';
-	// console.log(url);
+	console.log(url);
 
 	request(url, function (error, response, m) {
 
 		// console.log(m);
 
-		console.log("\n" + "Title : " + JSON.parse(m).Title + "\n");
+		console.log("Title : " + JSON.parse(m).Title + "\n");
 		console.log("Date/Year of Release : " + JSON.parse(m).Released + "\n");
 
 		var ratings = JSON.parse(m).Ratings;
