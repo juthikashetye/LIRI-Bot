@@ -1,12 +1,26 @@
 require("dotenv").config();
+
+//spotify keys stored here
 var keys = require("./keys");
-var request = require("request");
+
+//for getting data from omdb and bands in town api
 var axios = require("axios");
+
 var moment = require("moment");
+
+//for date formatting
 moment().format();
+
 var Spotify = require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
+
 var f = require("fs");
+
+//api response
+var output;
+
+//rotten tomatoes rating
+var rtRating;
 
 // node liri.js userCommand queryParameter
 
@@ -41,6 +55,7 @@ function processUserCommand(userCommand, queryParameter) {
 
 function processConcertThis(artist) {
 
+  //bands in town api
   var bandsUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
   axios.get(bandsUrl).then(function(response) {
@@ -54,11 +69,16 @@ function processConcertThis(artist) {
       // console.log(JSON.stringify(response.data,null,2));
       for (var i = 0; i < concerts.length; i++) {
 
-        console.log("\n" + [i + 1] + ". " + "Venue : " + concerts[i].venue.name + "\n");
-        console.log("Location : " + concerts[i].venue.city + "," + concerts[i].venue.country + "\n")
-        console.log("Date : " + moment(concerts[i].datetime).format("MM/DD/YYYY") + "\n");
+      	output = "\n" + [i + 1] + ". " + "Venue : " + concerts[i].venue.name + "\n" +
+      			 "Location : " + concerts[i].venue.city + "," + concerts[i].venue.country + "\n" +
+      			 "Date : " + moment(concerts[i].datetime).format("MM/DD/YYYY") + "\n";
+
+      	console.log(output);
+
+      	logData(process.argv[2], process.argv.slice(3).join(" ").trim(), output);
 
       }
+      
     }
 
   }).catch(function(error) {
@@ -83,16 +103,19 @@ function processSpotifySong(song) {
     if (err) {
       return console.log("\n" + "Error occurred: " + err + "\n");
     }
-
     // console.log(JSON.stringify(data, null, 2));
     var track = data.tracks.items;
 
     for (var i = 0; i < track.length; i++) {
 
-      console.log("\n" + "Artists : " + JSON.stringify(track[i].album.artists[0].name) + "\n");
-      console.log("Song name : " + JSON.stringify(track[i].name) + "\n");
-      console.log("Album name : " + JSON.stringify(track[i].album.name) + "\n");
-      console.log("Preview link of the song : " + JSON.stringify(track[i].preview_url) + "\n");
+      output = "\n" + "Artists : " + track[i].album.artists[0].name + "\n" +
+      		   "Song name : " + track[i].name + "\n" +
+      		   "Album name : " + track[i].album.name + "\n" +
+      		   "Preview link of the song : " + track[i].preview_url + "\n";
+
+      console.log(output);
+
+      logData(process.argv[2], process.argv.slice(3).join(" ").trim(), output);
     }
 
   });
@@ -105,27 +128,34 @@ function processMovie(movie) {
     movie = "Mr. Nobody";
   }
 
+  //omdb api
   var url = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
   axios.get(url).then(function(m) {
-
-    console.log("\n" + "Title : " + m.data.Title + "\n");
-    console.log("Date/Year of Release : " + m.data.Released + "\n");
 
     var ratings = m.data.Ratings;
 
     for (var i = 0; i < ratings.length; i++) {
 
-      if ((ratings[i].Source == "Internet Movie Database") || (ratings[i].Source == "Rotten Tomatoes")) {
-        console.log(ratings[i].Source + " Rating : " + ratings[i].Value + "\n");
-      }
+      if ((ratings[i].Source == "Rotten Tomatoes")) {
 
+        rtRating = ratings[i].Source + " Rating : " + ratings[i].Value;
+
+      }
     }
 
-    console.log("Country : " + m.data.Country + "\n");
-    console.log("Language : " + m.data.Language + "\n");
-    console.log("Plot : " + m.data.Plot + "\n");
-    console.log("Actors : " + m.data.Actors + "\n");
+    output = "\n" + "Title : " + m.data.Title + "\n" +
+  			 "Date/Year of Release : " + m.data.Released + "\n" +
+  			 "IMDB Rating : " + m.data.imdbRating + "\n" +
+  			 rtRating + "\n" + 
+  			 "Country : " + m.data.Country + "\n" +
+  			 "Language : " + m.data.Language + "\n" +
+  			 "Plot : " + m.data.Plot + "\n" +
+  			 "Actors : " + m.data.Actors + "\n";
+
+  	console.log(output);
+
+  	logData(process.argv[2], process.argv.slice(3).join(" ").trim(), output);
 
   }).catch(function(error) {
 
@@ -173,6 +203,13 @@ function processDoWhatItSays(doAsTold) {
 
   });
 
+}
+
+function logData(command, entertainment, toBeLogged){
+
+  //append all the data including user commands into log.txt
+  f.appendFileSync("log.txt", "\n" +"LIRI command: " + command + " " + entertainment + "\n" + toBeLogged + "\n");
+  
 }
 
 function init() {

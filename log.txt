@@ -1,0 +1,12 @@
+
+LIRI command: movie-this it
+
+Title : It
+Date/Year of Release : 08 Sep 2017
+IMDB Rating : 7.4
+Rotten Tomatoes Rating : 85%
+Country : USA, Canada
+Language : English
+Plot : In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.
+Actors : Jaeden Lieberher, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard
+
