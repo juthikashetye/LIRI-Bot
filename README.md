@@ -8,21 +8,21 @@
 
 * To retrieve the data that will power this app, you'll need to install the following Node packages. Without installing these packages, the app won't work on your computer.
 
-  * Node-Spotify-API https://www.npmjs.com/package/node-spotify-api
+	* Node-Spotify-API https://www.npmjs.com/package/node-spotify-api
 
-             * npm install --save node-spotify-api
+		* npm install --save node-spotify-api
 
-  * Axios https://www.npmjs.com/package/axios
+	* Axios https://www.npmjs.com/package/axios
 
-             * npm install axios
+		* npm install axios
 
-  * Moment https://www.npmjs.com/package/moment
+	* Moment https://www.npmjs.com/package/moment
 
-             * npm i moment
+		* npm i moment
 
-  * DotEnv https://www.npmjs.com/package/dotenv
+	* DotEnv https://www.npmjs.com/package/dotenv
 
-            * npm install dotenv
+		* npm install dotenv
 
 * Visit Spotify website https://developer.spotify.com/my-applications/#!/ to get your own spotify API keys.
 
@@ -39,23 +39,24 @@
 
 #### To get a list of shows for an artist/band type :
 
-		* node liri.js concert-this artist/band name
-		* eg: node liri.js concert-this lady gaga
+* node liri.js concert-this artist/band name
+	* eg: node liri.js concert-this lady gaga
 
 #### To get info about a movie type :
 
-		* node liri.js movie-this movie name
-		* eg: node liri.js movie-this Cast Away
+* node liri.js movie-this movie name
+	* eg: node liri.js movie-this Cast Away
 
 #### To get info about a song type :
 
-		* node liri.js spotify-this-song song name
-		* eg: node liri.js spotify-this-song World Cup
+* node liri.js spotify-this-song song name
+	* eg: node liri.js spotify-this-song World Cup
 
 #### To get info of whatever is written in random.txt type :
 
-		* node liri.js do-what-it-says
+* node liri.js do-what-it-says
 
-	  	* This command will give info about a song, artist shows or movie as per the random.txt contents. You can edit random.txt to put your own parameters.
+	* This command will give info about a song, artist shows or movie as per the random.txt contents.
+	* You can edit random.txt to put your own parameters.
 
 
