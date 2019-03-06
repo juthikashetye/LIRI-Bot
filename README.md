@@ -41,8 +41,8 @@
 
 * node liri.js concert-this artist/band name
 	* eg: `node liri.js concert-this lady gaga`
-	
-	![Image of concert-this lady gaga](https://github.com/juthikashetye/LIRI-Bot/images/concert-this-ladyGaga.png)
+
+	![Image of concert-this lady gaga](./images/concert-this-ladyGaga.png)
 
 #### To get info about a movie, type this :
 
