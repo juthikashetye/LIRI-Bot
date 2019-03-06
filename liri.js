@@ -192,7 +192,7 @@ function processDoWhatItSays(doAsTold) {
     //include quotes
     // doAsTold = data.slice(data.indexOf(",") + 1);
 
-    console.log(command, doAsTold);
+    console.log("\n" + "'" + "random.txt content : " + command, doAsTold + "'");
 
     if (command == "spotify-this-song") {
 

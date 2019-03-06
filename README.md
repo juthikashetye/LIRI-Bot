@@ -41,6 +41,8 @@
 
 * node liri.js concert-this artist/band name
 	* eg: `node liri.js concert-this lady gaga`
+	
+	![Image of concert-this lady gaga](https://github.com/juthikashetye/LIRI-Bot/images/concert-this-ladyGaga.png)
 
 #### To get info about a movie, type this :
 
@@ -58,5 +60,9 @@
 
 	* This command will give info about a song, artist shows or movie as per the `random.txt` contents.
 	* You can edit `random.txt` to put your own parameters.
+
+## Working of App
+
+* Click this [Youtube video](https://youtu.be/D8zWhHRtxO4) for a demo of the working of this app.
 
 

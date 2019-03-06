@@ -1,5 +1,249 @@
 
-LIRI command: movie-this it
+LIRI command: movie-this cast away
+
+Title : Cast Away
+Date/Year of Release : 22 Dec 2000
+IMDB Rating : 7.8
+Rotten Tomatoes Rating : 89%
+Country : USA
+Language : English, Russian
+Plot : A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+Actors : Tom Hanks, Paul Sanchez, Lari White, Leonid Citer
+
+
+LIRI command: movie-this 
+
+Title : Mr. Nobody
+Date/Year of Release : 26 Sep 2013
+IMDB Rating : 7.8
+Rotten Tomatoes Rating : 67%
+Country : Belgium, Germany, Canada, France, USA, UK
+Language : English, Mohawk
+Plot : A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors : Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+
+LIRI command: spotify-this-song world cup
+
+Artists : Shakira
+Song name : Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song]
+Album name : Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song] (feat. Freshlyground)
+Preview link of the song : https://p.scdn.co/mp3-preview/f01830f7be6c8b654d44c8f7a1f1d06756ab920f?cid=5b2c1bd6ab0f42ce9390b04a46afc694
+
+
+LIRI command: spotify-this-song 
+
+Artists : Ace of Base
+Song name : The Sign
+Album name : The Sign (US Album) [Remastered]
+Preview link of the song : https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=5b2c1bd6ab0f42ce9390b04a46afc694
+
+
+LIRI command: concert-this lady gaga
+
+1. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 05/30/2019
+
+
+LIRI command: concert-this lady gaga
+
+2. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 06/01/2019
+
+
+LIRI command: concert-this lady gaga
+
+3. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, June 1 and June 2)
+Location : Las Vegas,United States
+Date : 06/02/2019
+
+
+LIRI command: concert-this lady gaga
+
+4. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 06/02/2019
+
+
+LIRI command: concert-this lady gaga
+
+5. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 06/06/2019
+
+
+LIRI command: concert-this lady gaga
+
+6. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 06/08/2019
+
+
+LIRI command: concert-this lady gaga
+
+7. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 06/09/2019
+
+
+LIRI command: concert-this lady gaga
+
+8. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, June 8 and June 9)
+Location : Las Vegas,United States
+Date : 06/09/2019
+
+
+LIRI command: concert-this lady gaga
+
+9. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 06/12/2019
+
+
+LIRI command: concert-this lady gaga
+
+10. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 06/14/2019
+
+
+LIRI command: concert-this lady gaga
+
+11. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 06/15/2019
+
+
+LIRI command: concert-this lady gaga
+
+12. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, June 14 and June 15)
+Location : Las Vegas,United States
+Date : 06/15/2019
+
+
+LIRI command: concert-this lady gaga
+
+13. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 10/17/2019
+
+
+LIRI command: concert-this lady gaga
+
+14. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 10/19/2019
+
+
+LIRI command: concert-this lady gaga
+
+15. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 10/20/2019
+
+
+LIRI command: concert-this lady gaga
+
+16. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, October 19 and October 20)
+Location : Las Vegas,United States
+Date : 10/20/2019
+
+
+LIRI command: concert-this lady gaga
+
+17. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 10/23/2019
+
+
+LIRI command: concert-this lady gaga
+
+18. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 10/25/2019
+
+
+LIRI command: concert-this lady gaga
+
+19. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 10/26/2019
+
+
+LIRI command: concert-this lady gaga
+
+20. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, October 25 and October 26)
+Location : Las Vegas,United States
+Date : 10/26/2019
+
+
+LIRI command: concert-this lady gaga
+
+21. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 10/31/2019
+
+
+LIRI command: concert-this lady gaga
+
+22. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 11/02/2019
+
+
+LIRI command: concert-this lady gaga
+
+23. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 11/03/2019
+
+
+LIRI command: concert-this lady gaga
+
+24. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, November 2 and November 3)
+Location : Las Vegas,United States
+Date : 11/03/2019
+
+
+LIRI command: concert-this lady gaga
+
+25. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 11/06/2019
+
+
+LIRI command: concert-this lady gaga
+
+26. Venue : LADY GAGA ENIGMA
+Location : Las Vegas,United States
+Date : 11/08/2019
+
+
+LIRI command: concert-this lady gaga
+
+27. Venue : LADY GAGA JAZZ & PIANO
+Location : Las Vegas,United States
+Date : 11/09/2019
+
+
+LIRI command: concert-this lady gaga
+
+28. Venue : LADY GAGA FULL LAS VEGAS EXPERIENCE: ENIGMA & JAZZ & PIANO (includes both shows, November 8 and November 9)
+Location : Las Vegas,United States
+Date : 11/09/2019
+
+
+LIRI command: do-what-it-says 
+
+Artists : Backstreet Boys
+Song name : I Want It That Way
+Album name : The Hits--Chapter One
+Preview link of the song : https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=5b2c1bd6ab0f42ce9390b04a46afc694
+
+
+LIRI command: do-what-it-says 
 
 Title : It
 Date/Year of Release : 08 Sep 2017
@@ -9,4 +253,207 @@ Country : USA, Canada
 Language : English
 Plot : In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.
 Actors : Jaeden Lieberher, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard
+
+
+LIRI command: do-what-it-says 
+
+1. Venue : Sprint Center
+Location : Kansas City,United States
+Date : 03/06/2019
+
+
+LIRI command: do-what-it-says 
+
+2. Venue : KFC Yum! Center
+Location : Louisville,United States
+Date : 03/09/2019
+
+
+LIRI command: do-what-it-says 
+
+3. Venue : Bankers Life Fieldhouse
+Location : Indianapolis,United States
+Date : 03/11/2019
+
+
+LIRI command: do-what-it-says 
+
+4. Venue : Van Andel Arena
+Location : Grand Rapids,United States
+Date : 03/13/2019
+
+
+LIRI command: do-what-it-says 
+
+5. Venue : Estadio do Restelo
+Location : Lisbon,Portugal
+Date : 05/01/2019
+
+
+LIRI command: do-what-it-says 
+
+6. Venue : Valdebebas - IFEMA
+Location : Madrid,Spain
+Date : 05/03/2019
+
+
+LIRI command: do-what-it-says 
+
+7. Venue : Estadi Olímpic Lluís Companys
+Location : Barcelona,Spain
+Date : 05/05/2019
+
+
+LIRI command: do-what-it-says 
+
+8. Venue : Ippodromo Snai - San Siro
+Location : Milan,Italy
+Date : 05/08/2019
+
+
+LIRI command: do-what-it-says 
+
+9. Venue : Stadion Letzigrund
+Location : Zürich,Switzerland
+Date : 05/10/2019
+
+
+LIRI command: do-what-it-says 
+
+10. Venue : Stade de France
+Location : Paris,France
+Date : 05/12/2019
+
+
+LIRI command: do-what-it-says 
+
+11. Venue : SLANE CASTLE
+Location : Co. Meath,Ireland
+Date : 06/08/2019
+
+
+LIRI command: do-what-it-says 
+
+12. Venue : Johan Cruijff ArenA
+Location : Amsterdam,Netherlands
+Date : 06/11/2019
+
+
+LIRI command: do-what-it-says 
+
+13. Venue : RheinEnergieSTADION
+Location : Köln,Germany
+Date : 06/13/2019
+
+
+LIRI command: do-what-it-says 
+
+14. Venue : King Baudouin Stadium
+Location : Bruxelles,Belgium
+Date : 06/16/2019
+
+
+LIRI command: do-what-it-says 
+
+15. Venue : Etihad Stadium
+Location : Manchester,United Kingdom
+Date : 06/18/2019
+
+
+LIRI command: do-what-it-says 
+
+16. Venue : Twickenham Stadium
+Location : London,United Kingdom
+Date : 06/20/2019
+
+
+LIRI command: do-what-it-says 
+
+17. Venue : Olympiastadion
+Location : Berlin,Germany
+Date : 07/06/2019
+
+
+LIRI command: do-what-it-says 
+
+18. Venue : Ullevi Restaurant & Conference
+Location : Göteborg,Sweden
+Date : 07/09/2019
+
+
+LIRI command: do-what-it-says 
+
+19. Venue : Telia Parken
+Location : Copenhagen,Denmark
+Date : 07/11/2019
+
+
+LIRI command: do-what-it-says 
+
+20. Venue : Granasen Arena
+Location : Trondheim,Norway
+Date : 07/13/2019
+
+
+LIRI command: do-what-it-says 
+
+21. Venue : KANTOLAN TAPAHTUMAPUISTO
+Location : Hameenlinna,Finland
+Date : 07/16/2019
+
+
+LIRI command: do-what-it-says 
+
+22. Venue : Raadi lennuväli
+Location : Tartu,Estonia
+Date : 07/18/2019
+
+
+LIRI command: do-what-it-says 
+
+23. Venue : The Luzhniki Stadium
+Location : Moscow,Russia
+Date : 07/21/2019
+
+
+LIRI command: do-what-it-says 
+
+24. Venue : NATIONAL ARENA
+Location : Bucuresti,Romania
+Date : 08/14/2019
+
+
+LIRI command: do-what-it-says 
+
+25. Venue : Ernst-Happel-Stadion
+Location : Wien,Austria
+Date : 08/16/2019
+
+
+LIRI command: do-what-it-says 
+
+26. Venue : Letiště Praha Letňany
+Location : Praha,Czech Republic
+Date : 08/18/2019
+
+
+LIRI command: do-what-it-says 
+
+27. Venue : PGE Narodowy
+Location : Warsaw,Poland
+Date : 08/21/2019
+
+
+LIRI command: do-what-it-says 
+
+28. Venue : Olympiastadion
+Location : Munchen,Germany
+Date : 08/23/2019
+
+
+LIRI command: do-what-it-says 
+
+29. Venue : Maimarkt Gelände
+Location : Mannheim,Germany
+Date : 08/25/2019
 
