@@ -61,7 +61,8 @@ function processConcertThis(artist) {
   axios.get(bandsUrl).then(function(response) {
 
     var concerts = response.data;
-    if (response.data[0].venue === null) {
+
+    if (concerts[0].venue === null) {
 
       console.log("\n" + "Sorry! Currently there are no shows listed for this artist." + "\n");
 
@@ -144,18 +145,24 @@ function processMovie(movie) {
       }
     }
 
-    output = "\n" + "Title : " + m.data.Title + "\n" +
-  			 "Date/Year of Release : " + m.data.Released + "\n" +
-  			 "IMDB Rating : " + m.data.imdbRating + "\n" +
-  			 rtRating + "\n" + 
-  			 "Country : " + m.data.Country + "\n" +
-  			 "Language : " + m.data.Language + "\n" +
-  			 "Plot : " + m.data.Plot + "\n" +
-  			 "Actors : " + m.data.Actors + "\n";
+    if (rtRating == undefined) {
 
-  	console.log(output);
+      rtRating = "Rotten Tomatoes Rating : N/A";
 
-  	logData(process.argv[2], process.argv.slice(3).join(" ").trim(), output);
+    }
+
+      output = "\n" + "Title : " + m.data.Title + "\n" +
+         "Date/Year of Release : " + m.data.Released + "\n" +
+         "IMDB Rating : " + m.data.imdbRating + "\n" +
+         rtRating + "\n" + 
+         "Country : " + m.data.Country + "\n" +
+         "Language : " + m.data.Language + "\n" +
+         "Plot : " + m.data.Plot + "\n" +
+         "Actors : " + m.data.Actors + "\n";
+
+    console.log(output);
+
+    logData(process.argv[2], process.argv.slice(3).join(" ").trim(), output);
 
   }).catch(function(error) {
 
