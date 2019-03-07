@@ -46,7 +46,6 @@
 * node liri.js concert-this artist/band name
 
 	* eg: `node liri.js concert-this lady gaga`
-
 	![Image of concert-this lady gaga](./images/concert-this-ladyGaga.png)
 
 #### To get info about a movie, type this :
@@ -54,11 +53,9 @@
 * node liri.js movie-this movie name
 
 	* eg 1: `node liri.js movie-this Cast Away`
-
 	![Image of movie-this Cast Away](./images/movie-this-castAway.png)
 
 	* eg 2: `node liri.js movie-this` (when name of movie is not provided), it shows info about the movie "Mr. Nobody"
-
 	![Image of movie-this](./images/movie-this.png)
 
 #### To get info about a song, type this :
@@ -66,11 +63,9 @@
 * node liri.js spotify-this-song song name
 
 	* eg 1: `node liri.js spotify-this-song World Cup`
-
 	![Image of spotify-this-song World Cup](./images/spotify-this-song-worldCup.png)
 
 	* eg 2: `node liri.js spotify-this-song` (when name of song is not provided), it shows info about the song "The Sign" by Ace of Base
-
 	![Image of spotify-this-song](./images/spotify-this-song.png)
 
 #### To get info of whatever is written in `random.txt`, type this :
@@ -81,12 +76,20 @@
 	* You can edit `random.txt` to put your own parameters.
 
 	When `random.txt` has `concert-this,"metallica"`
+	![Image of random.txt concert](./images/random-concert.png)
 	![Image of do-what-it-says concert](./images/do-concert.png)
 
-	When `random.txt` has `movie-this,"it"`
+	When `random.txt` has `movie-this,"It"`
+	![Image of random.txt movie](./images/random-movie.png)
 	![Image of do-what-it-says movie](./images/do-movie.png)
 
 	When `random.txt` has `spotify-this-song,"I want it that way"`
+	![Image of random.txt song](./images/random-song.png)
 	![Image of do-what-it-says song](./images/do-song.png)
+
+#### Logged Data
+
+* All the data including the commands typed in terminal are logged in the `log.txt` file like this :
+![Image of log.txt](./images/log.png)
 
 
