@@ -57,7 +57,7 @@
 
 	![Image of movie-this Cast Away](./images/movie-this-castAway.png)
 
-	* eg 2: `node liri.js movie-this` (when name of movie is not provided)
+	* eg 2: `node liri.js movie-this` (when name of movie is not provided), it shows info about the movie "Mr. Nobody"
 
 	![Image of movie-this](./images/movie-this.png)
 
@@ -69,7 +69,7 @@
 
 	![Image of spotify-this-song World Cup](./images/spotify-this-song-worldCup.png)
 
-	* eg 2: `node liri.js spotify-this-song` (when name of song is not provided)
+	* eg 2: `node liri.js spotify-this-song` (when name of song is not provided), it shows info about the song "The Sign" by Ace of Base
 
 	![Image of spotify-this-song](./images/spotify-this-song.png)
 
